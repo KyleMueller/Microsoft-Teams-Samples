@@ -26,9 +26,12 @@
   "staticTabs": [
     {
       "entityId": "index",
+      "context": [
+	"privateChatTab"
+      ],
       "name": "Personal Tab",
-      "contentUrl": "https://${{TAB_DOMAIN}}/tab",
-      "websiteUrl": "https://${{TAB_DOMAIN}}/tab",
+      "contentUrl": "https://appdev1.monmouth.com/ms_teams_tab?user_login_hint={user.loginHint}&ms_teams_id={user.id}&dep_ms_teams_id={userObjectId}&dep_login_hint={loginHint}&ms_tenant_id={user.tenant.id}&dep_ms_tenant_id={tid}",
+      "websiteUrl": "https://appdev1.monmouth.com/",
       "scopes": [
         "personal"
       ]
@@ -39,6 +42,6 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "${{TAB_DOMAIN}}"
+    "appdev1.monmouth.com"
   ]
 }
